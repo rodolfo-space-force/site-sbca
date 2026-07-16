@@ -1,0 +1,44 @@
+.whatsappIBDFAM, .linkIBDFAM, .nucleoInternacional{
+    color: white;
+    height: 55px;
+    position: absolute;
+    top: 20px;
+    padding: 1rem 0.5rem 0 0.5rem;
+    border-radius: 15px;
+    text-align: center;
+    width: 110px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0;
+}
+
+.nucleoInternacional{
+    background-color: gray;
+    margin-left: 140px;
+    margin-right: auto; 
+    width: 130px !important;
+}
+
+.whatsappIBDFAM{
+    background-color: #25d366;
+    margin-left: 25px;
+    margin-right: auto; 
+}
+
+.linkIBDFAM{
+    background-color: #C12F2A;
+    margin-left: -90px;
+    margin-right: auto; 
+}
+
+
+.whatsappIBDFAM a, .linkIBDFAM a, .nucleoInternacional a{
+    color: white !important;
+}
+
+@media screen and (max-width: 992px) {
+    .whatsappIBDFAM, .linkIBDFAM, .nucleoInternacional {
+        display: none;
+    }
+}

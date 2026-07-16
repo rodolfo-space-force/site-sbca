@@ -1,0 +1,50 @@
+.inscricoesStatus{
+    width:25%;
+    height:100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.inscricoesStatus::before{
+    content:'';
+    background-image:conic-gradient(
+        red 20deg,
+        transparent 120deg
+    );
+    width:150%;
+    height:150%;
+    position: absolute;
+    animation:rotate 2s linear infinite;
+}
+
+.inscricoesStatusContent{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    padding:7.5rem 4.5rem;
+    margin:0;
+    z-index:10 ;
+    background:#fff;
+    animation: aumentar 1s infinite ;
+
+}
+@keyframes rotate {
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}
+
+@keyframes aumentar {
+    0%{
+        font-size: 1rem;
+    }
+    100%{
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+}

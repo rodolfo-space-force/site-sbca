@@ -1,0 +1,134 @@
+
+
+.info-assoc{
+    text-align: center;
+    padding: 0.3rem;
+}
+
+
+.curta-share-idioma{
+    text-align: right;
+    margin: 0.5rem 0;
+}
+.curta-share-idioma  a{
+    margin-left: 0.5rem;
+    color: black;
+}
+
+
+.img-responsive {
+    margin: 0 auto;
+}
+
+.logo-ibd{
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.menu-options{
+    margin-left: 0;
+    margin-bottom: 0.5rem;
+}
+
+form{
+    padding: 1rem;
+}
+.senha .btn-entrar .associe-now{
+    margin-top: 5px ;
+}
+.navbar-default{
+    margin-top: 4rem;
+}
+
+.input-login, .input-senha{
+    height: 34px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+
+@media (min-width: 992px){
+
+    .header-test{
+        display: flex;
+        flex-direction: column; 
+    }
+    .menu-options{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .barra-navegacao{
+        display: flex;
+        justify-content: center;
+    }
+    
+    
+}
+@media (max-width: 991px){
+
+    .menu-options{
+        display: flex;
+        align-items: center;
+        margin-bottom: 5rem;
+        justify-content: center;
+    }
+
+    i{
+        padding: 0.5rem;
+    }
+
+    form{
+        padding: 1.5rem;
+    }
+    form .associe-now{
+        margin-top: 0.5rem;
+    }
+    .navbar-default{
+        margin-top: 6rem;
+    }
+}
+
+@media (max-width: 720px){
+    .navbar-default{
+        margin-top: 0;
+    }
+    .menu-options{
+        margin-bottom: 1rem;
+    }
+}
+
+@media(max-width: 678px){
+    form{
+        display: flex;
+        flex-direction: column;
+    }
+    form .btn-entrar{
+        margin-top: 0.5rem;
+    }
+    .barra-navegacao{
+        padding: 1rem;
+        margin-left: 0.5rem;
+        width: 100%;
+        min-width: 250px;
+        max-width: 350px;
+    }
+    .barra-navegacao li a{
+        margin-bottom: 0.5rem;
+    }
+    .ibdfamNavLiSearchInput{
+        display: flex;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu>li>a {
+        color: #000000;
+        margin-bottom: 1rem;
+    }
+}
+.botao-menu {
+    float: left;
+    margin-right: 30px;
+}
+
+.navbar-toggle .icon-bar{
+    margin-left: auto;
+    }
