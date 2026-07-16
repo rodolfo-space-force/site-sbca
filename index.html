@@ -1,0 +1,1379 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>IBDFAM : Instituto Brasileiro de Direito das Famílias e Sucessões</title>
+
+    <link rel="shortcut icon" href="https://ibdfam.org.br/upload/favicon.png" type="image/png"/>
+    
+
+    <meta name="description" content="SBCA: Sociedade Brasileira de Ciências Aeroespaciais." />
+    <!-- Meta tags do Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ibdfam.org.br/" />
+    <meta property="og:title" content="SBCA: Sociedade Brasileira de Ciências Aeroespaciais." />
+    <meta property="og:description" content="SBCA: Sociedade Brasileira de Ciências Aeroespaciais." />
+    <meta property="og:image" content="https://ibdfam.org.br/assets/images/ibdfam.png" />
+    <meta property="og:image:width" content="300" />
+    <meta property="og:image:height" content="300" />
+    <meta property="og:locale" content="pt_BR" />
+    <!-- Meta tags do Twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="SBCA: Sociedade Brasileira de Ciências Aeroespaciais." />
+    <meta name="twitter:description" content="SBCA: Sociedade Brasileira de Ciências Aeroespaciais." />
+    <meta name="twitter:image" content="https://ibdfam.org.br/assets/images/ibdfam.png" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css"
+        integrity="sha512-nMNlpuaDPrqlEls3IX/Q56H36qvBASwb3ipuo3MxeWbsQB1881ox0cRv7UPTgBlriqoynt35KjEwgGUeUXIPnw=="
+        crossorigin="anonymous" />
+    <link href="//fonts.googleapis.com/css?family=Roboto:400,300italic,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rye" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/animationBorder.css">
+    <link rel="stylesheet" href="css/slidorion.css" />
+    <link rel="stylesheet" href="css/ibdfam-new.css">
+    <link rel="stylesheet" href="css/header-new.css">
+    <link rel="stylesheet" href="css/menu-new.css">
+    <link rel="stylesheet" href="css/tiktok.css">
+    <link rel="stylesheet" href="css/button_navbar.css">
+
+    <!-- jQuery principal -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- jQuery UI -->
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    
+
+
+    <style>
+        /* === CORREÇÃO SBCA: logotipo novo + botões fora do carrossel === */
+
+        .logo-ibd img {
+            width: 170px !important;
+            height: 170px !important;
+            object-fit: contain !important;
+            display: block !important;
+            margin: 0 auto !important;
+        }
+
+        .menu-options {
+            position: relative !important;
+            clear: both !important;
+            width: 100% !important;
+            height: auto !important;
+            margin-top: 15px !important;
+            margin-bottom: 22px !important;
+            z-index: 10 !important;
+            overflow: visible !important;
+        }
+
+        .info-assoc {
+            position: relative !important;
+            display: flex !important;
+            justify-content: center !important;
+            align-items: center !important;
+            gap: 18px !important;
+            width: 100% !important;
+            height: auto !important;
+            padding: 0 !important;
+            overflow: visible !important;
+        }
+
+        .linkIBDFAM,
+        .whatsappIBDFAM,
+        .nucleoInternacional {
+            position: relative !important;
+            top: auto !important;
+            left: auto !important;
+            right: auto !important;
+            bottom: auto !important;
+            float: none !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            z-index: 20 !important;
+        }
+
+        header {
+            position: relative !important;
+            height: auto !important;
+            min-height: 0 !important;
+            overflow: visible !important;
+        }
+
+        .header-test {
+            height: auto !important;
+            min-height: 0 !important;
+            overflow: visible !important;
+            padding-bottom: 18px !important;
+        }
+
+        nav.navbar.navbar-default {
+            position: relative !important;
+            clear: both !important;
+            z-index: 5 !important;
+        }
+
+        .principal {
+            clear: both !important;
+        }
+
+        #carousel {
+            clear: both !important;
+            margin-top: 20px !important;
+        }
+
+        @media (max-width: 767px) {
+            .info-assoc {
+                flex-direction: column !important;
+                gap: 10px !important;
+            }
+
+            .linkIBDFAM,
+            .whatsappIBDFAM,
+            .nucleoInternacional {
+                width: 100% !important;
+                max-width: 280px !important;
+            }
+        }
+    </style>
+
+
+    <style>
+        /* === CORREÇÃO CHROME: apoiadores / Slick Carousel === */
+        #apoiadores .slick-carousel {
+            width: 100% !important;
+            max-width: 100% !important;
+            overflow: hidden !important;
+        }
+
+        #apoiadores .slick-carousel:not(.slick-initialized) {
+            display: flex !important;
+            flex-wrap: nowrap !important;
+            gap: 16px !important;
+            justify-content: center !important;
+        }
+
+        #apoiadores .slick-carousel:not(.slick-initialized) .item {
+            flex: 0 0 268px !important;
+            width: 268px !important;
+            max-width: 268px !important;
+            display: block !important;
+        }
+
+        #apoiadores .slick-slide {
+            padding: 0 8px !important;
+            box-sizing: border-box !important;
+        }
+
+        #apoiadores .slick-slide img {
+            display: block !important;
+            margin: 0 auto !important;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header style="z-index: 140000;">
+        <div>
+            <div class="container header-test">
+                <div class="col-md-12">
+                    <div class="curta-share-idioma">
+                        <a target="_blank" href="https://pt-br.facebook.com/ibdfam/ "><i
+                                class="fa fa-2x fa-facebook-official fa-xl" aria-hidden="true"></i></a>
+                        <a target="_blank" href="https://www.instagram.com/ibdfam/"><i
+                                class="fa fa-2x fa-instagram fa-xl" aria-hidden="true"></i></i></a>
+                        <a target="_blank" href="https://www.tiktok.com/@ibdfam"><i class="fa fa-2x fa-tiktok fa-xl"
+                                aria-hidden="true"></i></i></a>
+                        <a target="_blank" href="https://www.youtube.com/user/IbdfamBrasil"><i
+                                class="fa fa-2x fa-youtube-square fa-xl" aria-hidden="true"></i></a>
+                        <a target="_blank" href="https://wa.me/message/W6TRRLSWDVJ6E1"><i
+                                class="fa fa-2x fa-whatsapp fa-xl" aria-hidden="true"></i></a>
+                        <a target="_blank" href="https://www.linkedin.com/company/ibdfam"><i
+                                class="fa fa-2x fa-linkedin fa-xl" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-12 logo-ibd">
+                    <img class="img-responsive" src="logo-sbca.png" style="width:170px; height:170px; object-fit:contain;" />
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar navbar-default">
+        <div style="display: flex; justify-content: center; align-items:center;" class=container>
+            <div class=navbar-header>
+                <button type="button" class="navbar-toggle collapsed" style="text-align:center;" data-toggle="collapse"
+                    data-target=#bs-example-navbar-collapse-1>
+                    <span class="botao-menu">Menu</span>
+                    <span class=icon-bar></span>
+                    <span class=icon-bar></span>
+                    <span class=icon-bar></span>
+                    <span class=icon-bar></span>
+
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id=bs-example-navbar-collapse-1>
+                <ul class="nav navbar-nav barra-navegacao">
+                    <li><a href="https://ibdfam.org.br/">Início</a></li>
+                    <li><a href="https://ibdfam.org.br/conheca-o-ibdfam">Quem&nbsp;Somos</a></li>
+                    <li><a href="https://ibdfam.org.br/conteudo/associese">Associe&ndash;se</a></li>
+                    <li><a href="https://ibdfam.org.br/noticias">Projetos</a></li>
+                    <li><a href="https://ibdfam.org.br/artigos">Apoiadores</a></li>
+                    <li><a href="https://ibdfam.org.br/jurisprudencia">Eventos</a></li>
+                    <li><a href="https://ibdfam.org.br/apoiadores">Publicações</a></li>
+                    <li><a href="https://ibdfam.org.br/eventos">Internacional</a></li>
+                    <!--<li><a href="#" data-toggle="modal" data-target="#myNewsletter">Newsletter</a></li>-->
+                    <li><a href="https://ibdfam.org.br/FaleConosco">Contato</a></li>
+                </ul>
+          </div>
+            <!--
+            <form method="post" action="https://ibdfam.org.br/conteudo/pesquisa_geral" class="navbar-form navbar-left">
+                <div class="form-group">
+                    <input type="text" class="form-control" name="termo_pesquisa" id="termo_pesquisa"
+                        placeholder="Pesquisa...">
+                </div>
+                <input type="submit" hidden />
+                <div id="google_translate_element"></div>
+            </form>
+            -->
+            <form method="post" action="#"  class="navbar-form navbar-left">
+                <div id="google_translate_element"></div>
+            </form>
+        </div>
+    </nav><div class="row-fluid">
+  <div class="principal">
+        <div class="row">
+            <div id="carousel" class="col-md-12">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        			                                    <div class="item active">
+                            <a target="_blank" href="https://ibdfam.org.br/certificado/evento?id=242">
+                                <img class="img-responsive" src="https://ibdfam.org.br/assets/images/banners/CERTIFICADO.png"
+                                    alt="" style="max-height:400px;">
+                            </a>
+                            <div class="carousel-caption">
+                                <h3></h3>
+                                <p></p>
+                            </div>
+                        </div>
+                        			                                    <div class="item ">
+                            <a target="_blank" href="https://whatsapp.com/channel/0029VaeuXg69xVJb3mESs71K">
+                                <img class="img-responsive" src="https://ibdfam.org.br/assets/images/banners/canalibdfam.jpeg"
+                                    alt="" style="max-height:400px;">
+                            </a>
+                            <div class="carousel-caption">
+                                <h3></h3>
+                                <p></p>
+                            </div>
+                        </div>
+                        			                                    <div class="item ">
+                            <a target="_blank" href="https://wa.me/5531999241805?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20P%C3%B3s-Gradua%C3%A7%C3%A3o%20Tr%C3%ADade-IBDFAM">
+                                <img class="img-responsive" src="https://ibdfam.org.br/assets/images/banners/POSNATAL.png"
+                                    alt="" style="max-height:400px;">
+                            </a>
+                            <div class="carousel-caption">
+                                <h3></h3>
+                                <p></p>
+                            </div>
+                        </div>
+                                            </div>
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <div id="apoiadores" class="col-md-12">
+                <div class="container">
+                    <style>
+                        .slick-carousel{
+                            margin-bottom: 4rem;
+                        }
+
+                        #apoiadores img{
+                            width: 268px;
+                            height: 140px;
+                            border-radius: 10px;
+                            border: 1px solid #EDEEF0;
+                        }
+                    </style>
+                    <div id="incentivadores" class="col-md-12">
+                        <div class="center-text">
+                            <h1>APOIADOR PREMIUM</h1>
+                        </div>
+                        <div class="slick-carousel">
+                                                            <div class="item">
+                                    <a target="_blank" href="https://www.sylviaoliveira.com.br/index.php">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/sylvia.jpeg" alt="Sylvia Aparecida Moraes Oliveira">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="https://www.linsdecarvalho.adv.br/">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/linsCarvalhoAdvogados.jpeg" alt="Lins de Carvalho Advogados">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="https://www.instagram.com/brandaocarvalho_adv/">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/brandao_carvalho.png" alt="Brandao Carvalho Advogados Associados">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="http://tagidlage.com/">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/Tagid.jpeg" alt="Tagid Lage Nogueira">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="https://rosemarytherezalopes.com.br/">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/Rosemary.jpg" alt="Rosemary Thereza Lopes">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="https://naramelloadvocacia.com.br/">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/NaraMello.jpeg" alt="Nara Mello Sociedade Individual de Advocacia">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="https://www.fertonanilaureto.com.br/">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/fernandofertonani.png" alt="Fernando Fertonani">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="https://igorflorencecintra.adv.br/">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/igorFor.jpg" alt="Igor Florence Cintra">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="https://www.maggilimasato.com.br/">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/100000000227969.png" alt="MAGGI LIMA SATO ADVOCACIA">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="https://rtm.adv.br/">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/RAGHIANT.jpeg" alt="RAGHIANT TORRES ADVOGADOS ASSOCIADOS">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/adriana_andreani.jpeg" alt="Adriana Andreani">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="https://www.instagram.com/fernandosalzer.adv/">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/fernandoSalzer.jpeg" alt="Fernando Salzer e Silva">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="https://oficio1itaocara.com.br/">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/100000000013355.png" alt="Rogerio Marques Sequeira Costa">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="http://www.tortoromr.com.br/">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/Namur2.png" alt="Cassio Sabbagh Namur">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="https://www.arcanjociprianoadvogadas.com.br/">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/alineCiprianoCruz.png" alt="Aline Cipriano da Cruz">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="https://www.instagram.com/fermituoadv?igsh=MXNyMTdhNWs2dzlsaA==">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/mariaMituo.png" alt="Maria Fernanda Pereira Mituo">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="#">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/Izaberla.png" alt="Izaberla Ferrer Mourao Linhares">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="http://harrisonleite.com.br/">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/UNIVERSAL.jpg" alt="Livia de Jesus Neves Cardoso">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/cassiobernardes.jpg" alt="Cassio Bernardes">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="http://www.direitodafamilia.com.br/">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/AntonioCarlos.png" alt="Antonio Carlos Ramos Pinto">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="http://www.sociedadedeadvogadas.com.br/">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/Gorisch.jpg" alt="Patricia Cristina Vasques de Souza Gorisch">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="#">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/malta.jpeg" alt="Renata Malta Vilas-Boas">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="https://www.instagram.com/sabrinablaustein/">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/menor.png" alt="Blaustein Mello & Ramalho Advocacia">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="https://www.brunavidal.adv.br/">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/brunaAlves.jpeg" alt="Bruna Alves Freitas Vidal">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="https://appsadvogados.com.br/">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/100000000023955.jpg" alt="Ana Maria Amaral Peixoto da Porciuncula">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="https://ibdfam.org.br/escritorios/detalhes/12683">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/100000000020170.jpeg" alt="Manoela Silva Netto Soares de Melo">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="https://www.amorimebatista.adv.br/">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/diogol.jpeg" alt="Diogo Luiz Torres Amorim">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="http://afbaymaadvogados.com.br/">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/bayma.jpg" alt="Alda Fernanda Sodre Bayma Silva">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="http://www.pinzonadv.com.br/">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/jocelaniPinzon.png" alt="Jocelani Pinzon">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="#">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/PAUDALHO.jpeg" alt="CARTORIO 2 OFICIO DE PAUDALHO">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="#">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/savio.jpg" alt="Savio Renato Bittencourt Soares Silva">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="https://macadvocacia.com/">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/logoMA&C.jpg" alt="RAFAEL MARTINS DE ARAUJO CARDOSO SOCIEDADE IN">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="https://www.pfpadvogados.com.br/">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/unnamed.png" alt="Maria Ines Fernandez Miguez Pinto">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="www.12notas.com.br">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/conceicaogaspar-logo_page-0001.jpg" alt="Conceiçao Aparecida Nobre Gaspar">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="#">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/100000000009653.jpeg" alt="Ana Paula Protzner Morbeck">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="https://www.instagram.com/lubrasileiro/">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/55751.png" alt="Luciana da Fonseca Lima Brasileiro">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="http://www.mmp.adv.br/">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/machadoPinhoMazzei.png" alt="Machado, Mazzei e Pinho Advogados">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="https://www.alinemmartins.com.br/">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/alinemelo.png" alt="Aline de Melo Martins">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/siam.jpeg" alt="SOCIEDADE INDIVIDUAL DE ADVOCACIA MARIANA GOM">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="https://www.instagram.com/ana.mattielo/">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/Mattielo.jpg" alt="Ana Maria Mattielo">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="http://ibdfam.org.br/escritorios/detalhes/1104/Aurea%20Cristina%20Damas%20da%20Mota">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/aurea.png" alt="Aurea Cristina Damas da Mota">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="https://webcartoriosobradinho.com.br">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/GeraldoSouto.jpg" alt="Geraldo Felipe de Souto Silva">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="https://www.zordenonesadvogados.com.br/index.html">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/JosleideZordenones.png" alt="Josleide Zordenones dos Santos">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="http://advocaciadiniz.online/">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/advogadodiniz.jpeg" alt="Antonio Carlos Diniz Junior">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="https://www.instagram.com/bonalume_andrade/">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/bonalume.jpg" alt="Bonalume & Andrade">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="https://www.pinhogomes.com.br/">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/Logo_pinho_gomes_advogados (1).png" alt="Pinho Gomes Sociedade de Advogados">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="https://www.instagram.com/gestao_patrimonio?utm_source=qr&igsh=MnVmcmZnajR2N2Y0">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/100000000222934.jpg" alt="Freitas e Borba Sociedade de Advogados">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="http://www.ggsa.com.br/">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/bernadrdo.jpg" alt="Bernardo Pereira de Castro Moreira Garcia">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="http://www.cartoriomanaus.com.br/">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/azulazul.png" alt="Jose Marcelo de Castro Lima Filho">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="x">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/LinsDu.png" alt="Bruna Lins Duarte">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="#">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/100000000221883.png" alt="Fabricia Estrella Sociedade Individual de Adv">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="https://www.galdino.adv.br/">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/advocaciagaldino.jpeg" alt="Advocacia Galdino">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="https://www.instagram.com/thaisraribeiro/">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/100000000016713.jpeg" alt="Thais Rezende Azevedo Ribeiro">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="https://rodrigosparvoli.adv.br/">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/sparvoli.jpeg" alt="Rodrigo Severino Sparvoli">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="#">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/OrestesSanchez.jpeg" alt="Orestes Sanchez de Camargo">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="https://alexmatosadvogados.com.br/">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/AlexMAdvogados.png" alt="Alex Matos Advogados">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="https://elianaqueirozadvogados.adv.br/">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/100000000227964.jpeg" alt="Eliana dos Santos Queiroz Sociedade Individua">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="http://www.ibdfam.org.br/apoiadores">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/bahrlogo.png" alt="Andrea Bahr Gomes">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="#">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/logo_ribeiro.jpeg" alt="Ribeiro & Tavares Advogadas Associadas">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="https://bio.site/queroagendarminhaconsulta">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/angelinaKloppel.png" alt="Angelina Bonaldi Klöppel">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="http://www.direitodefamilia.adv.br/">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/FelipeGontijo.png" alt="ADVOCACIA JULIANA GONTIJO E FERNANDO GONTIJO">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="http://rtm.adv.br/">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/raghi.jpg" alt="Lucia Maria Torres Farias">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="https://www.curyemouresimao.adv.br/">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/Cury.jpg" alt="Cury e Moure Simão Advogados Associados">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="http://www.familiaesucessoes.com.br/">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/logo euclides.png" alt="Euclides Benedito de Oliveira">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="http://www.fermello.com.br/">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/FM20LOGOV.png" alt="Milton Jose Ferreira de Mello">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="http://www.mmcz.adv.br/">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/marta.jpg" alt="Marta de Oliveira Castro">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="#">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/100000000001367.png" alt="Maria Alice Correa Berta">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="#">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/logo_mlpc.jpg" alt="Maria Luiza Povoa Cruz">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="#">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/vladia-fei.png" alt="Vladia Feitosa Sociedade Individual de Advoca">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="http://www.passoseschmidt.com.br/">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/juliano_rosa.jpeg" alt="Juliano da Rosa Passos">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="https://oitismediacao.com.br/">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/oitis.png" alt="Gabriela Pisani Medina">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="https://www.warossi.com.br/">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/warossi.png" alt="Wilson Pinheiro Rossi">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="https://www.fflorianoadvogados.com.br/">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/florentinoCostaFloriano.jpeg" alt="Florestino da Costa Floriano">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="#">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/rachelbardigusman.png" alt="Rachel Bardi Gusman">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="#">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/Pablo Carvalho Moreno.jpeg" alt="">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="#">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/Agapito.jpeg" alt="Priscila de Castro Teixeira P. Lopes Agapito">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="https://linsesilva.com.br/">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/pauloMaltaLins.jpg" alt="Paulo Malta Lins e Silva">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="x">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/fete.png" alt="Rosa Gomes Sociedade Individual de Advocacia">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="#">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/tonin.png" alt="TONIN SOCIEDADE INDIVIDUAL DE ADVOCACIA">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="http://www.castilhopimenta.com.br/">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/castilho.jpg" alt="Karina de Oliveira Castilho Failla">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="#">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/Rita_Holanda.png" alt="Maria Rita de Holanda Silva Oliveira">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="http://diasmunhoz.com.br/">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/diasMunhozAdvogadosAssociados.jpg" alt="Dias Munhoz Advogados Associados">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:0cd7a877-edf3-4e3f-bc9d-c2dae78b6d7d">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/ingreidSan.jpeg" alt="Ingrid dos Santos">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="https://marcosalves.adv.br/">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/Marcos Alves da Silva.jpeg" alt="Marcos Alves da Silva">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="https://www.rvermelho.adv.br/">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/100000000228010.png" alt="R VERMELHO E ADVOGADOS ASSOCIADOS">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="https://www.instagram.com/luizclaudioguimaraesadv?utm_source=ig_web_button_share_sheet&igs">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/Luiz Claudio.png" alt="Luiz Claudio de Lima Guimaraes Coelho">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="https://contigliadvogados.com.br/">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/contigli.jpg" alt="Flavia Couto de Oliveira Contigli">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/janeaparecida.png" alt="Jane Aparecida Hernandes">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="#">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/tatianagoldhar.jpeg" alt="Goldhar e Machado Advocacia 
+">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="#">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/100000000222874.png" alt="LUCIANA DA CUNHA PEREIRA MARTINS">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="https://mmb.adv.br/">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/8653.png" alt="Andrea Marcondes Machado de Mendonça">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="http://gaudio.adv.br/">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/GaudioLima.jpeg" alt="Gaudio e Lima Sociedade de Advogados">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="https://bassimchakur.com.br/#Inicio">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/bassim.jpg" alt="Bassim Chakur Filho">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="http://mariaberenice.com.br">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/logo_maria_berenice.png" alt="Maria Berenice Dias">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="#">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/adrianoJoseBorgesSilva.png" alt="Adriano Jose Borges Silva">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="https://www.cursotriade.com.br/">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/100000000229438.png" alt="Triade Estudos Juridicos">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="http://www.lucascarvalhoadv.com/">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/lucascardosocar.jpeg" alt="Lucas Cardoso de Carvalho">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="https://jaymerezende.com.br/">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/eliane_medeiros.png" alt="Eliane Aparecida de Castro Medeiros">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="https://hhbadvogados.com.br/">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/hhba.jpeg" alt="Heloisa Helena Barboza Advogados">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="http://www.ibdfam.org.br/escritorios/detalhes/12504/Ramos%20Pinto%20Advocacia">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/rp_advocacia.png" alt="Christovam Ramos Pinto Neto">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="http://www.priscilafonseca.com.br/">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/0101123456.jpeg" alt=" Priscila Correa da Fonseca">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="#">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/rosiiii.jpeg" alt="Rosemary Mafra Nunes Leite">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="https://www.arraisoliveira.com.br/">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/arraisOliveira.jpg" alt="Ione Arrais de Castro Oliveira">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="https://www.lungovebarrot.com.br">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/lungovs.jpg" alt="Carla Bimbo Lungov">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="#">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/guilherme_logo.png" alt="Guilherme da Costa Manso Vasconcellos">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="http://www.braa.adv.br/
+">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/100000000223298.jpeg" alt="Borralho e Rabaneda Advogados Associados">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="https://www.viniciuscavalcante.adv.br/">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/ViniciusCal.jpeg" alt="Vinicius Cavalcante Ferreira">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="http://www.poan.adv.br/">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/Postiglione.png" alt="
+Postiglione, Oliveira, Alves e Amaral Neto A">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="#">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/odileia.png" alt="Odileia Fiori Tosi">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="https://www.anvcadvogados.com.br/">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/100000000012249.png" alt="Adriana Vechies ">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="http://www.elizaadvocacia.com.br/">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/elizaConceicao.png" alt="Eliza Conceiçao">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="http://www.fachagas.adv.br/">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/fachagas.jpg" alt="F A CHAGAS E MACHADO ADVOGADOS ASSOCIADOS">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="https://rribeiroadv.com/">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/RRAS.png" alt="Rocha e RIbeiro Advogados Associados">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="https://legalfamily.com.br/">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/100000000006746.png" alt="Celia Caiuby">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="https://independent.academia.edu/FernandoGaburri">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/gaburri.jpeg" alt="Fernando Gaburri de Souza Lima">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="#">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/100000000212838.jpeg" alt="Maria Eduarda de Vieira Jorge">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="#">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/hack.jpg" alt="Andreia Strada Negrao">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="http://www.azevedoecamargolima.com.br/">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/isabellaAureli.png" alt="Isabella Aureli de Camargo Lima">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="http://ibdfam.org.br/apoiadores">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/logo_giselle.png" alt="Giselle Camara Groeninga">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="https://giovanaauricchio.adv.br/">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/Auricchio.png" alt="Giovana Auricchio Cardoso">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="http://www.alessanradaelli.com.br/">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/radaelli.jpeg" alt="Radaelli Sociedade Individual de Advocacia">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="http://www.camposdecarvalho.adv.br">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/maria helena_logo.png" alt="Maria Helena Campos de Carvalho">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="https://www.youtube.com/watch?v=N8NvUx7byb4">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/bodstein.png" alt="Lenice Bodstein">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="http://www.medeirossaraiva.adv.br/">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/aelsonRochaSaraiva.jpeg" alt="AELSON ROCHA SARAIVA">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="https://www.lucianarodrigues.com.br/">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/ManoelaSoares.png" alt="Luciana Rodrigues Pinto">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/eBarreto.jpeg" alt="Michelly Dias da Silva">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="https://www.instagram.com/adv.vivianemolina?utm_source=ig_web_button_share_sheet&igsh=ZDNl">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/vivianemo.jpg" alt="Viviane Molina">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="https://www.cartoriocaxias.com.br/">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/mariaBarbara.png" alt="Maria Barbara Toledo Andrade e Silva">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="http://lc.adv.br/">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/LOGOLeC.png" alt="Celia Aparecida Guimaraes Oliveira">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="https://andreiacalcada.com.br/">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/andreiacalca.png" alt="Andreia Soares Calçada">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="http://ibdfam.org.br/escritorios/detalhes/11043/Lucia%20Massara%20Sociedade%20de%20Advogad">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/luciamassaralogo.png" alt="Lucia Massara">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="https://ricardosiqueiraadv.com.br/">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/RicardoSiqueira.jpeg" alt="Ricardo Jose Nunes Siqueira">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="x">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/tatyanam.jpeg" alt="Tatyana Mello lima">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="https://www.linkedin.com/in/andr%C3%A9a-goulart-b4b02865/">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/andreiagoulard.jpeg" alt="Andrea Goulart Mendes Carruba">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/andre_luiz.jpeg" alt="Andre Luiz Soares Bernardes">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="https://berniadvogados.com.br/">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/100000000229484.png" alt="Berni Gestão e Consultoria Ltda">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="https://www.rkladvocacia.com/author/renankfuri">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/renankfc.jpg" alt="Renan Kfuri Lopes">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="https://mzbl.adv.br/">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/MZBL.png" alt="Daniela Rocegalli Rebelato">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="http://camposbernardo.com.br/">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/CamposBernardo.jpeg" alt="Campos Bernardo Advogados Associados">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="#">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/carla_costa.jpg" alt="Carla de Oliveira Costa Meneses Advocacia">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="https://lilianesobreira.adv.br/">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/lilianeapa.jpeg" alt="Liliane Aparecida Sobreira Ferreira Fonseca">
+                                    </a>
+                                </div>
+                                                            <div class="item">
+                                    <a target="_blank" href="http://ibdfam.org.br/escritorios/detalhes/10540">
+                                        <img class="img-responsive" src="https://ibdfam.org.br/assets/upload/apoiadores/gamboa.png" alt="Luciana Correa Gamboa da Silva Soares">
+                                    </a>
+                                </div>
+                                                    </div>
+                    </div>
+                </div>
+            </div>
+            <div id="noticia" class="col-md-12">
+                <div class="container">
+                    <div class="col-md-8">
+                        <div class="col-md-12 center-text">
+                            <h1>DESTAQUES</h1>
+                        </div>
+                        <div class="col-md-12 noticia-destaque">
+                                                        <a href="https://ibdfam.org.br/noticias/14050/Sancionada+lei+que+cria+banco+de+boas+pr%C3%A1ticas+para+combater+viol%C3%AAncia+contra+mulher">
+                                <div class="col-md-12">
+                                    <img style="max-height: 300px !important;" class="img-responsive pull-left"
+                                        src="https://assets.publicador.ibdfam.org.br/img/upload/noticias/b6de6-pexels-jan-van-der-wolf-11680885-18553087-(1).jpg"
+                                        height="200px" width="100%" />
+                                </div>
+                                <div class="col-md-12">
+                                    <span class="label label-danger">Legislação</span> <br />
+                                    <span class="titulo">Sancionada lei que cria banco de boas práticas para combater violência contra mulher</span> <br />
+                                </div>
+                            </a>
+                                                    </div>
+                        <div class="col-md-12">
+                                                        <div class="col-md-6 noticia-subdestaque">
+                                <a
+                                    href="https://ibdfam.org.br/noticias/14063/Justi%C3%A7a+da+Para%C3%ADba+suspende+plataforma+de+apostas+por+n%C3%A3o+impedir+o+acesso+de+crian%C3%A7as+e+adolescentes">
+                                    <span class="label label-danger">Proteção</span> <br />
+                                    <span class="titulo">Justiça da Paraíba suspende plataforma de apostas por não impedir o acesso de crianças e adolescentes</span> <br />
+                                </a>
+                            </div>
+                                                        <div class="col-md-6 noticia-subdestaque">
+                                <a
+                                    href="https://ibdfam.org.br/noticias/14062/Abandono+afetivo+conjugal+e+entrega+volunt%C3%A1ria+para+ado%C3%A7%C3%A3o+s%C3%A3o+abordados+na+Revista+IBDFAM">
+                                    <span class="label label-danger">Proteção</span> <br />
+                                    <span class="titulo">Abandono afetivo conjugal e entrega voluntária para adoção são abordados na Revista IBDFAM</span> <br />
+                                </a>
+                            </div>
+                                                        <div class="col-md-6 noticia-subdestaque">
+                                <a
+                                    href="https://ibdfam.org.br/noticias/14057/DNA+indireto+garante+reconhecimento+de+paternidade+post+mortem+na+Justi%C3%A7a+de+Santa+Catarina">
+                                    <span class="label label-danger">Decisão</span> <br />
+                                    <span class="titulo">DNA indireto garante reconhecimento de paternidade post mortem na Justiça de Santa Catarina</span> <br />
+                                </a>
+                            </div>
+                                                        <div class="col-md-6 noticia-subdestaque">
+                                <a
+                                    href="https://ibdfam.org.br/noticias/14054/TJSP+mant%C3%A9m+nulidade+de+testamento+que+direcionou+bens+de+homem+a+filho+de+cuidadores">
+                                    <span class="label label-danger">Autonomia</span> <br />
+                                    <span class="titulo">TJSP mantém nulidade de testamento que direcionou bens de homem a filho de cuidadores</span> <br />
+                                </a>
+                            </div>
+                                                    </div>
+                    </div>
+                    <div class="col-md-4 grid_ultimas_noticias">
+                        <div class="col-md-12 center-text text-center ">
+                            <h1>Últimas notícias</h1>
+                        </div>
+
+                                                <div class="ultimas_noticias col-md-12">
+                            <a href="https://ibdfam.org.br/noticias/14061/Projeto+de+lei+inclui+no+ECA+regra+que+autoriza+Minist%C3%A9rio+P%C3%BAblico+a+pedir+pens%C3%A3o+aliment%C3%ADcia+para+crian%C3%A7as+e+adolescentes">
+                                <span class="label label-danger"></span> <br />
+                                <span class="titulo">Projeto de lei inclui no ECA regra que autoriza Ministério Público a pedir pensão alimentícia para crianças e adolescentes</span> <br />
+                            </a>
+                        </div>
+                                                <div class="ultimas_noticias col-md-12">
+                            <a href="https://ibdfam.org.br/noticias/14060/Justi%C3%A7a+de+Goi%C3%A1s+determina+afastamento+de+marido+acusado+de+dilapidar+patrim%C3%B4nio+da+esposa+para+custear+apostas+on-line">
+                                <span class="label label-danger"></span> <br />
+                                <span class="titulo">Justiça de Goiás determina afastamento de marido acusado de dilapidar patrimônio da esposa para custear apostas on-line</span> <br />
+                            </a>
+                        </div>
+                                                <div class="ultimas_noticias col-md-12">
+                            <a href="https://ibdfam.org.br/noticias/14059/C%C3%A2mara+aprova+projeto+que+regulamenta+o+filtro+de+relev%C3%A2ncia+no+STJ%3B+texto+segue+para+san%C3%A7%C3%A3o">
+                                <span class="label label-danger"></span> <br />
+                                <span class="titulo">Câmara aprova projeto que regulamenta o filtro de relevância no STJ; texto segue para sanção</span> <br />
+                            </a>
+                        </div>
+                                                <div class="ultimas_noticias col-md-12">
+                            <a href="https://ibdfam.org.br/noticias/14058/Justi%C3%A7a+permite+retirada+de+sobrenome+paterno+ap%C3%B3s+viol%C3%AAncia+familiar">
+                                <span class="label label-danger"></span> <br />
+                                <span class="titulo">Justiça permite retirada de sobrenome paterno após violência familiar</span> <br />
+                            </a>
+                        </div>
+                                                <div class="ultimas_noticias col-md-12">
+                            <a href="https://ibdfam.org.br/noticias/14056/Justi%C3%A7a+da+Col%C3%B4mbia+autoriza+eutan%C3%A1sia+de+mulher+ap%C3%B3s+impasse+sobre+morte+digna+">
+                                <span class="label label-danger"></span> <br />
+                                <span class="titulo">Justiça da Colômbia autoriza eutanásia de mulher após impasse sobre morte digna </span> <br />
+                            </a>
+                        </div>
+                                                <div class="ultimas_noticias col-md-12">
+                            <a href="https://ibdfam.org.br/noticias/14055/TJMA+reforma+absolvi%C3%A7%C3%A3o+e+condena+homem+por+estupro+de+vulner%C3%A1vel+com+base+em+depoimento+da+crian%C3%A7a">
+                                <span class="label label-danger"></span> <br />
+                                <span class="titulo">TJMA reforma absolvição e condena homem por estupro de vulnerável com base em depoimento da criança</span> <br />
+                            </a>
+                        </div>
+                                                <div class="ultimas_noticias col-md-12">
+                            <a href="https://ibdfam.org.br/noticias/14053/TJPR+aplica+Lei+Brasileira+de+Inclus%C3%A3o+em+caso+de+contrato+banc%C3%A1rio">
+                                <span class="label label-danger"></span> <br />
+                                <span class="titulo">TJPR aplica Lei Brasileira de Inclusão em caso de contrato bancário</span> <br />
+                            </a>
+                        </div>
+                        
+                    </div>
+                    <div class="col-md-12 center-text">
+                        <h5 class="mais-noticias">
+                            <a rule="button" class="btn btn-primary " href="https://ibdfam.org.br/noticias">Mais notícias</a>
+                        </h5>
+                    </div>
+                </div>
+            </div>
+
+            <div id="artigo" class="col-md-12">
+                <div class="container">
+                    <div class="col-md-6">
+                        <h1>Artigos</h1>
+                                                <div class="col-md-12 artigo-subdestaque">
+                            <div class="col-md-12">
+                                <a
+                                    href="https://ibdfam.org.br/artigos/2577/Compliance+Familiar%3A+governan%C3%A7a%2C+preven%C3%A7%C3%A3o+de+conflitos+e+planejamento+patrimonial+das+fam%C3%ADlias">
+                                    <span class="titulo-artigo">Compliance Familiar: governança, prevenção de conflitos e planejamento patrimonial das famílias</span><br />
+                                    <span class="autor-artigo">Tatiane Gonçalves Miranda Goldhar</span>
+                                </a>
+                            </div>
+                        </div>
+                                                <div class="col-md-12 artigo-subdestaque">
+                            <div class="col-md-12">
+                                <a
+                                    href="https://ibdfam.org.br/artigos/2576/A+teoria+unit%C3%A1ria+da+tutela+civil">
+                                    <span class="titulo-artigo">A teoria unitária da tutela civil</span><br />
+                                    <span class="autor-artigo">Alan Duarte Villas Boas</span>
+                                </a>
+                            </div>
+                        </div>
+                                                <div class="col-md-12 artigo-subdestaque">
+                            <div class="col-md-12">
+                                <a
+                                    href="https://ibdfam.org.br/artigos/2575/O+ataque+%28masculino%29+%C3%A0+dimens%C3%A3o+feminina+nos+processos+de+alimentos+em+favor+dos+filhos+a+partir+de+um+olhar+psicanal%C3%ADtico">
+                                    <span class="titulo-artigo">O ataque (masculino) à dimensão feminina nos processos de alimentos em favor dos filhos a partir de um olhar psicanalítico</span><br />
+                                    <span class="autor-artigo">João Alberto Silva de Oliveira</span>
+                                </a>
+                            </div>
+                        </div>
+                                                <div class="col-md-12 artigo-subdestaque">
+                            <div class="col-md-12">
+                                <a
+                                    href="https://ibdfam.org.br/artigos/2574/%E2%80%9CSunday+dads%E2%80%9D%3A+o+pai+como+visitante+espor%C3%A1dico+e+a+insufici%C3%AAncia+da+paternidade+meramente+recreativa">
+                                    <span class="titulo-artigo">“Sunday dads”: o pai como visitante esporádico e a insuficiência da paternidade meramente recreativa</span><br />
+                                    <span class="autor-artigo">Eduardo Augusto Salomão Cambi e Uriel Pozzi Silva</span>
+                                </a>
+                            </div>
+                        </div>
+                                            </div>
+                    <div class="col-md-6">
+                        <h1>Podcast IBDFAM</h1>
+                        <iframe src="https://open.spotify.com/embed/show/2qJIvtWsyfep2tuRWQwVKh" width="100%"
+                            height="500" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<script src="https://ibdfam.org.br/assets/js/modalHomeIBDFAM.js"></script>
+<footer>
+    <div class="container">
+        <ul>
+            <li><a href="https://ibdfam.org.br/conheca-o-ibdfam">A SBCA</a></li>
+            <li><a href="https://ibdfam.org.br/conheca-o-ibdfam/diretoria">Diretoria</a></li>
+            <li><a href="https://ibdfam.org.br/FaleConosco">Entre em contato</a></li>
+            <li><a href="https://ibdfam.org.br/conheca-o-ibdfam/contrato">Termos de uso</a></li>
+            <li><a href="https://ibdfam.org.br/conheca-o-ibdfam/politica-de-privacidade">Política de privacidade</a>
+            </li>
+        </ul>
+        <p>
+        &copy; SBCA - Sede Nacional - Rua Tenente Brito Melo, 1.223 - São José dos Campos, São Paulo- SP</p>
+    </div>
+</footer>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.full.min.js" integrity="sha512-RtZU3AyMVArmHLiW0suEZ9McadTdegwbgtiQl5Qqo9kunkVg1ofwueXD8/8wv3Af8jkME3DDe3yLfR8HSJfT2g==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/additional-methods.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/localization/messages_pt_BR.min.js"></script>
+<script src="https://ibdfam.org.br/assets/js/jquery.easing.js"></script>
+<script src="https://ibdfam.org.br/assets/js/jquery.slidorion.js"></script>
+<script src="https://ibdfam.org.br/assets/js/jquery.ba-replacetext.min.js"></script>
+<script src="https://ibdfam.org.br/assets/js/fixto.min.js"></script>
+<script src="https://ibdfam.org.br/assets/js/jquery.cookie.js"></script>
+<script src="https://ibdfam.org.br/assets/js/jquery.maskedinput.min.js" type="text/javascript"></script>
+<script src="https://ibdfam.org.br/assets/js/jquery.countdown.min.js" type="text/javascript"></script>
+<script src="https://ibdfam.org.br/assets/js/jquery.simple-calendar.js"></script>
+<script src="https://ibdfam.org.br/assets/plugins/lightbox/src/js/lightbox.js"></script>
+<script src="https://ibdfam.org.br/assets/js/jquery.sticky.js"></script>
+<script src="https://ibdfam.org.br/assets/js/ibdfam.js"></script>
+<script src="https://ibdfam.org.br/assets/js/cpf-cnpj.js"></script>
+<script src="https://ibdfam.org.br/assets/js/menu-new.js"></script>
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://ibdfam.org.br/assets/js/carousel_slick.js" type="text/javascript"></script>
+
+<script src="https://ibdfam.org.br/assets/js/myscript.js" type="text/javascript"></script>
+
+
+
+<!-- Translate -->
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: 'pt',
+            includedLanguages: 'en,es,fr,de,it,pt,pt-PT',
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+            autoDisplay: false
+        }, 'google_translate_element');
+
+        var selectedLang = localStorage.getItem('selectedLanguage');
+        if (selectedLang) {
+            var select = document.querySelector('select.goog-te-combo');
+            if (select) {
+                select.value = selectedLang;
+                select.dispatchEvent(new Event('change'));
+            }
+        }
+    }
+
+    function storeLanguageSelection() {
+        var select = document.querySelector('select.goog-te-combo');
+        if (select) {
+        select.addEventListener('change', function () {
+            var selectedLang = select.value;
+            localStorage.setItem('selectedLanguage', selectedLang);
+        });
+        }
+    }
+
+    window.addEventListener('load', function() {
+        storeLanguageSelection();
+    });
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<!-- End Translate -->
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-F36HYWZHTS"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-F36HYWZHTS');
+</script>
+<!-- End Google Analytics -->
+
+
+<script>
+    // === CORREÇÃO CHROME: reinicialização segura do carrossel de apoiadores ===
+    (function () {
+        function iniciarApoiadoresChrome() {
+            if (typeof jQuery === "undefined") return;
+
+            var $ = jQuery;
+            var $carrossel = $(".slick-carousel");
+
+            if (!$carrossel.length) return;
+            if (typeof $.fn.slick === "undefined") return;
+
+            try {
+                if ($carrossel.hasClass("slick-initialized")) {
+                    $carrossel.slick("unslick");
+                }
+
+                $carrossel.slick({
+                    dots: false,
+                    infinite: true,
+                    speed: 500,
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 2500,
+                    arrows: true,
+                    adaptiveHeight: false,
+                    responsive: [
+                        {
+                            breakpoint: 1200,
+                            settings: {
+                                slidesToShow: 3,
+                                slidesToScroll: 1
+                            }
+                        },
+                        {
+                            breakpoint: 768,
+                            settings: {
+                                slidesToShow: 2,
+                                slidesToScroll: 1
+                            }
+                        },
+                        {
+                            breakpoint: 480,
+                            settings: {
+                                slidesToShow: 1,
+                                slidesToScroll: 1
+                            }
+                        }
+                    ]
+                });
+
+                setTimeout(function () {
+                    $carrossel.slick("setPosition");
+                }, 300);
+
+            } catch (e) {
+                console.log("Erro ao iniciar Slick dos apoiadores:", e);
+            }
+        }
+
+        if (typeof jQuery !== "undefined") {
+            jQuery(window).on("load", function () {
+                setTimeout(iniciarApoiadoresChrome, 500);
+            });
+
+            jQuery(window).on("resize", function () {
+                var $ = jQuery;
+                var $carrossel = $(".slick-carousel");
+                if ($carrossel.length && $carrossel.hasClass("slick-initialized")) {
+                    $carrossel.slick("setPosition");
+                }
+            });
+        }
+    })();
+</script>
+
+</body>
+
+</html>
